@@ -1,6 +1,9 @@
 import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:foodinventory/dashboard.dart';
+
+import 'drawerLayout/drawer_layout.dart';
 
 class ResertPassword extends StatelessWidget {
   const ResertPassword({Key? key}) : super(key: key);
@@ -88,7 +91,8 @@ class ResertPassword extends StatelessWidget {
 
               ElevatedButton(
                 onPressed: () {
-                  Navigator.pop(context);
+                  Navigator.push(context, MaterialPageRoute
+                    (builder: (context) => DashBoard()));
                 },
                 style: ElevatedButton.styleFrom(
                   padding: EdgeInsets.all(10.0),
